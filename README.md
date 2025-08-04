@@ -1,20 +1,20 @@
 CRUD Simples para alteração de dados de usuário.
 
-Feito usando vue,js e Quasar, aplicação WEB que resgata dados de uma API pública e exibe em forma de cartões com possibilidade de criação, edição e alteração, além de um Dashboard demonstrativo e funções básicas de login e sessão.
+Feito usando vue.js e Quasar, aplicação WEB que resgata dados de uma API pública e exibe em forma de cartões com possibilidade de criação, edição e alteração, além de um Dashboard demonstrativo e funções básicas de login e sessão.
 
 ## Considerações Importantes
 
-- Layouts Separados foram criados para página de autenticação e para a página de consulta, mesmo que o Layout não inclua nenhum elemento, apenas para caso seja necessário escalar o projeto e adicionar múltiplas páginas ou barras de navegação.
+- Layouts Separados foram criados para a página de autenticação e para a página de consulta mesmo que o Layout não inclua nenhum elemento, apenas para caso seja necessário escalar o projeto e adicionar múltiplas páginas ou barras de navegação.
 
 - Gráficos de Dashboard apenas para demonstração, como a API utilizada apenas lista nomes de usuários e seus respectivos e-mails, foram criados gráficos fictícios.
 
-- Log-In só inclui campo de e-mail, como a API utilizada só comporta campo de e-mail, o log-in só está sendo realizado apenas com e-mail
+- Log-In só inclui campo de e-mail, como a API utilizada só comporta campo de e-mail, o log-in está sendo realizado apenas com e-mail
 
-- Log-In sendo tratado no front-end, apenas para fins de demonstração, o log-in busca as informações na API e compara com os dados inseridos diretamente no front-end ao invés de enviar um request via /POST, devido as limitações da API utilizada, como não há campo de senha, também não existe necessidade de se usar hashes para segurança
+- Log-In sendo tratado no front-end, apenas para fins de demonstração, devido as limitações da API utilizada, o log-in busca as informações na API e compara com os dados inseridos diretamente no front-end ao invés de enviar um request via /POST , como não há campo de senha, também não existe necessidade de se usar hashes para segurança.
 
 - A sessão está sendo guardada localmente, através do Pinia, esta tecnologia oficialmente (Site oficial do Vue, link abaixo) substitui a ultima versão do Vuex, porém os dois funcionam exatamente da mesma forma.
 
-- Alterações feitas nos dados que veem da API são armazenadas e alteradas localmente apenas, alterações serão perdidas ao atualizar a página.
+- Alterações feitas nos dados que vem da API são armazenadas e alteradas localmente apenas, alterações serão perdidas ao atualizar a página.
 
 ## Modo de Uso
 
