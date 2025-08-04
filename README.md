@@ -34,5 +34,5 @@ Feito usando vue.js e Quasar, aplicação WEB que resgata dados de uma API públ
 - [Quasar Framework](https://quasar.dev/)
 - [Vite](https://vitejs.dev/)
 - [Highcharts](https://www.highcharts.com/)
-- [Axios] (https://axios-http.com/)
-- [Pinia] (https://pinia.vuejs.org/)
+- [Axios](https://axios-http.com/)
+- [Pinia](https://pinia.vuejs.org/)
