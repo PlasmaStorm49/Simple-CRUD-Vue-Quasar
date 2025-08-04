@@ -24,7 +24,7 @@ import PieChart from 'src/components/MultiCharts.vue'
 
 <style scoped>
 .border-box {
-  height: calc(100vh - 130px);
+  height: calc(100vh - 140px);
   border: 0.5px solid gray;
   border-radius: 50px;
   background-color: transparent;

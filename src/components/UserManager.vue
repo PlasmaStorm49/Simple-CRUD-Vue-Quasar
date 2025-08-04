@@ -251,6 +251,6 @@ function createUser() {
   overflow: hidden;
   overflow-y: auto;
   padding-right: 8px;
-  padding-bottom: 36px;
+  padding-bottom: 40px;
 }
 </style>

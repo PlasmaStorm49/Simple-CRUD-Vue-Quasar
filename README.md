@@ -2,8 +2,6 @@ CRUD Simples para alteração de dados de usuário.
 
 Feito usando vue,js e Quasar, aplicação WEB que resgata dados de uma API pública e exibe em forma de cartões com possibilidade de criação, edição e alteração, além de um Dashboard demonstrativo e funções básicas de login e sessão.
 
----
-
 ## Considerações Importantes
 
 - Layouts Separados foram criados para página de autenticação e para a página de consulta, mesmo que o Layout não inclua nenhum elemento, apenas para caso seja necessário escalar o projeto e adicionar múltiplas páginas ou barras de navegação.
@@ -18,8 +16,6 @@ Feito usando vue,js e Quasar, aplicação WEB que resgata dados de uma API públ
 
 - Alterações feitas nos dados que veem da API são armazenadas e alteradas localmente apenas, alterações serão perdidas ao atualizar a página.
 
----
-
 ## Modo de Uso
 
 - Incluir um arquivo .env.local com o link e a chave da API, seguindo o .env.example no projeto foi usado apenas como exemplo, porém a API e a chave são públicas:
@@ -28,11 +24,9 @@ Feito usando vue,js e Quasar, aplicação WEB que resgata dados de uma API públ
 
 - Rodar localmente através de um `npm run dev` ou `quasar dev`
 
-- Demonstrativo disponibilizado on-line em:
+- Demonstrativo disponibilizado on-line em: [DEMO](https://simple-crud-vue-quasar.vercel.app/#/login)
 
 - Para realizar o login, consultar qualquer e-mail de usuário incluído na API, ou usar o seguinte e-mail de exemplo: `george.bluth@reqres.in`
-
----
 
 ## Tecnologias Utilizadas
 
