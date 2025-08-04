@@ -1,43 +1,44 @@
-# Simple User CRUD (simple-user-crud)
+CRUD Simples para alteração de dados de usuário.
 
-Simple User CRUD using Quasar and Vue.js
+Feito usando vue,js e Quasar, aplicação WEB que resgata dados de uma API pública e exibe em forma de cartões com possibilidade de criação, edição e alteração, além de um Dashboard demonstrativo e funções básicas de login e sessão.
 
-## Install the dependencies
+---
 
-```bash
-yarn
-# or
-npm install
-```
+## Considerações Importantes
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+- Layouts Separados foram criados para página de autenticação e para a página de consulta, mesmo que o Layout não inclua nenhum elemento, apenas para caso seja necessário escalar o projeto e adicionar múltiplas páginas ou barras de navegação.
 
-```bash
-quasar dev
-```
+- Gráficos de Dashboard apenas para demonstração, como a API utilizada apenas lista nomes de usuários e seus respectivos e-mails, foram criados gráficos fictícios.
 
-### Lint the files
+- Log-In só inclui campo de e-mail, como a API utilizada só comporta campo de e-mail, o log-in só está sendo realizado apenas com e-mail
 
-```bash
-yarn lint
-# or
-npm run lint
-```
+- Log-In sendo tratado no front-end, apenas para fins de demonstração, o log-in busca as informações na API e compara com os dados inseridos diretamente no front-end ao invés de enviar um request via /POST, devido as limitações da API utilizada, como não há campo de senha, também não existe necessidade de se usar hashes para segurança
 
-### Format the files
+- A sessão está sendo guardada localmente, através do Pinia, esta tecnologia oficialmente (Site oficial do Vue, link abaixo) substitui a ultima versão do Vuex, porém os dois funcionam exatamente da mesma forma.
 
-```bash
-yarn format
-# or
-npm run format
-```
+- Alterações feitas nos dados que veem da API são armazenadas e alteradas localmente apenas, alterações serão perdidas ao atualizar a página.
 
-### Build the app for production
+---
 
-```bash
-quasar build
-```
+## Modo de Uso
 
-### Customize the configuration
+- Incluir um arquivo .env.local com o link e a chave da API, seguindo o .env.example no projeto foi usado apenas como exemplo, porém a API e a chave são públicas:
+  API: `https://reqres.in/api/`
+  Chave `reqres-free-v1`
 
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+- Rodar localmente através de um `npm run dev` ou `quasar dev`
+
+- Demonstrativo disponibilizado on-line em:
+
+- Para realizar o login, consultar qualquer e-mail de usuário incluído na API, ou usar o seguinte e-mail de exemplo: `george.bluth@reqres.in`
+
+---
+
+## Tecnologias Utilizadas
+
+- [Vue 3](https://vuejs.org/)
+- [Quasar Framework](https://quasar.dev/)
+- [Vite](https://vitejs.dev/)
+- [Highcharts](https://www.highcharts.com/)
+- [Axios] (https://axios-http.com/)
+- [Pinia] (https://pinia.vuejs.org/)

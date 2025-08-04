@@ -1,1 +1,21 @@
-// app global css in Sass form
+//Mantém as mensagens de erro em cores visíveis para o tema escuro.
+body.body--dark .q-field--error .q-field__label 
+  color: white !important
+
+body.body--dark .q-field__messages 
+  color: white !important
+
+//Configura os scrolls de todo o site
+::-webkit-scrollbar 
+  width: 8px
+
+::-webkit-scrollbar-thumb 
+  background-color: #888
+  border-radius: 4px
+
+::-webkit-scrollbar-thumb:hover 
+  background-color: #aaa
+
+::-webkit-scrollbar-track 
+  background: transparent
+

@@ -2,11 +2,29 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
+    meta: {needsLogIn: true},
+    children: [
+      {
+        path: '',
+        component: () => import('src/pages/MainPage.vue')
+
+      }
+    ]
   },
 
-  // Always leave this as last one,
-  // but you can also remove it
+  {
+    path: '/login',
+    component: () => import('layouts/LoginLayout.vue'),
+    meta: {onlyLoggedOut : true},
+    children: [
+      {
+        path: '',
+        component: () => import('src/pages/LoginPage.vue')
+
+      }
+    ]
+  },
+
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue'),
